@@ -2,13 +2,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import MyPage from "./pages/MyPage";
+import logo from "../public/logo-white.png";
 
 import HeroGradient from "./sections/HeroGradient";
 import Mission1 from "./sections/Mission1";
 import Mission2 from "./sections/Mission2";
-import Science from "./sections/Science";
-import Resources from "./sections/Resources";
+import ScienceSec from "./sections/ScienceSec";
+import ResourcesSec from "./sections/ResourcesSec";
 import Investors from "./sections/Investors";
+import ContactUs from "./sections/ContactUs";
+import ContactUs2 from "./sections/ContactUs2";
+import Footer from "./components/Footer";
+import Team from "./sections/Team";
+import CTA from "./sections/CTA";
+import UseCases from "./sections/UseCases";
+import Pipeline from "./sections/Pipeline";
+import ResourcesExt from "./sections/ResourcesExt";
 
 // Example additional pages
 const Home = () => {
@@ -16,9 +25,11 @@ const Home = () => {
     <div>
       <HeroGradient />
       <Mission1 />
-      <Science />
-      <Resources />
+      <ScienceSec />
+      <ResourcesSec />
       <Investors />
+      <ContactUs2 />
+      <Footer logo={logo} />
     </div>
   );
 };
@@ -27,15 +38,38 @@ const About = () => {
   return (
     <div>
       <Mission2 />
+      <Team />
+      <CTA />
+      <Footer logo={logo} />
     </div>
   );
 };
 
 const Contact = () => {
   return (
-    <div className="contact-page">
-      <h1>Contact Page</h1>
-      <p>Reach out to us through this contact page.</p>
+    <div>
+      <ContactUs />
+      <Footer logo={logo} />
+    </div>
+  );
+};
+
+const Science = () => {
+  return (
+    <div>
+      <UseCases />
+      <Pipeline />
+      <Footer logo={logo} />
+    </div>
+  );
+};
+
+const Resources = () => {
+  return (
+    <div>
+      <ResourcesSec />
+      <ResourcesExt />
+      <Footer logo={logo} />
     </div>
   );
 };
@@ -82,6 +116,8 @@ function App() {
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/science" element={<Science />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
     </BrowserRouter>
   );

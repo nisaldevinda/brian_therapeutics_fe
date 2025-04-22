@@ -1,7 +1,7 @@
 import Text from "../components/text/TextComponent";
 import Button from "../components/text/Button";
 
-const Resources = () => {
+const ResourcesSec = () => {
   return (
     <>
       <div className="container max-w-7xl mx-auto px-4 py-8 md:py-20 flex flex-col gap-6 md:gap-15 items-center">
@@ -21,4 +21,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default ResourcesSec;

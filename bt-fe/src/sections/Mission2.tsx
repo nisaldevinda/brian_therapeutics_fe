@@ -6,7 +6,7 @@ const Mission2 = () => {
     <>
       <Navbar
         logo="/logo.png"
-        buttonText="Get Started"
+        buttonText="Contact Us"
         onButtonClick={() => console.log("Button clicked")}
       />
       <div className="container max-w-7xl mx-auto px-4 py-8 md:py-20 flex flex-col gap-6 md:gap-16">

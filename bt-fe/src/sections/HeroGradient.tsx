@@ -13,7 +13,7 @@ const HeroGradient = () => {
 
       <Navbar
         logo="/logo.png"
-        buttonText="Get Started"
+        buttonText="Contact Us"
         onButtonClick={() => console.log("Button clicked")}
       />
 

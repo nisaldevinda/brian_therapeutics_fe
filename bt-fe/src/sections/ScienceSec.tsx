@@ -1,7 +1,7 @@
 import Text from "../components/text/TextComponent";
 import Button from "../components/text/Button";
 
-const Science = () => {
+const ScienceSec = () => {
   return (
     <>
       <div className="h-auto  w-screen bg-[#AE0339]">
@@ -36,4 +36,4 @@ const Science = () => {
   );
 };
 
-export default Science;
+export default ScienceSec;
