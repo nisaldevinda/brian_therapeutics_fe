@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({
         className={`
         mx-auto 
         max-w-7xl 
-        bg-white/90 
+        bg-white/60 
         backdrop-blur-sm 
         rounded-2xl 
         shadow-md 
@@ -57,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Logo" className="h-10" />
+            <img src={logo} alt="Logo" className="h-12" />
             <Text variant="h4" className="ml-3 hidden sm:block">
               {logo.includes("/") ? "" : logo}
             </Text>
@@ -93,8 +93,8 @@ const Navbar: React.FC<NavbarProps> = ({
                   variant="body1"
                   className={`transition-colors duration-300 ${
                     location.pathname === item.path
-                      ? "text-blue-600"
-                      : "hover:text-blue-600"
+                      ? "text-[#1A1A1A]"
+                      : "hover:text-[#1D1D1F]"
                   }`}
                 >
                   {item.name}
@@ -105,9 +105,9 @@ const Navbar: React.FC<NavbarProps> = ({
           <div className="mt-4">
             <Link to="/contact">
               <Button
-                variant="button3"
-                bgColor="bg-blue-600"
-                color="text-white"
+                variant="button2"
+                bgColor=""
+                color="text-[#E00047]"
                 onClick={onButtonClick}
               >
                 {buttonText}
@@ -125,8 +125,8 @@ const Navbar: React.FC<NavbarProps> = ({
                   variant="body2"
                   className={`transition-colors duration-300 ${
                     location.pathname === item.path
-                      ? "text-blue-600"
-                      : "hover:text-blue-600"
+                      ? "text-[#1A1A1A]"
+                      : "hover:text-[#1D1D1F]"
                   }`}
                 >
                   {item.name}
@@ -136,10 +136,11 @@ const Navbar: React.FC<NavbarProps> = ({
           </div>
           <Link to="/contact" className="ml-4">
             <Button
-              variant="button3"
-              bgColor="bg-blue-600"
-              color="text-white"
+              variant="button2"
+              bgColor=""
+              color="text-[#E00047]"
               onClick={onButtonClick}
+              className="md:text-xl"
             >
               {buttonText}
             </Button>

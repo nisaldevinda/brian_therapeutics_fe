@@ -31,7 +31,7 @@ const Button: React.FC<ButtonProps> = ({
     button1: "py-2 gap-2 hover:gap-3",
 
     // Boxless button with text and paper airplane
-    button2: "py-2 gap-2 hover:gap-3",
+    button2: "py-2 gap-2",
 
     // Boxed button with text and paper airplane
     button3: "py-3 px-6 rounded-lg border gap-2 hover:shadow-md",
@@ -47,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
         return <ArrowRight size={18} className="transition-all duration-300" />;
       case "button2":
       case "button3":
-        return <Send size={18} className="transition-all duration-300" />;
+        return <Send size={20} className="transition-all duration-300" />;
       default:
         return null;
     }

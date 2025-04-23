@@ -2,7 +2,7 @@ import React from "react";
 
 // Define the props type
 type TextProps = {
-  variant: "h1" | "h2" | "h3" | "h4" | "body1" | "body2" | "body3";
+  variant: "h1" | "h2" | "h3" | "h4" | "body1" | "body2" | "body3" | "body4";
   children: React.ReactNode;
   color?: string;
   align?: "left" | "center" | "right" | "justify";
@@ -24,7 +24,8 @@ const Text: React.FC<TextProps> = ({
     h4: { fontFamily: '"Hanken Grotesk", sans-serif' },
     body1: { fontFamily: '"Instrument Sans", sans-serif' },
     body2: { fontFamily: '"Instrument Sans", sans-serif' },
-    body3: { fontFamily: '"Hanken Grotesk", sans-serif' },
+    body3: { fontFamily: '"Instrument Sans", sans-serif' },
+    body4: { fontFamily: '"Instrument Sans", sans-serif' },
   };
 
   // Text size and weight classes
@@ -36,6 +37,7 @@ const Text: React.FC<TextProps> = ({
     body1: "text-base md:text-xl font-medium tracking-tight",
     body2: "text-base md:text-xl font-normal tracking-tight",
     body3: "text-sm md:text-lg font-normal tracking-tight",
+    body4: "text-xs md:text-base font-normal tracking-tight",
   };
 
   // Text alignment classes
@@ -88,6 +90,12 @@ const Text: React.FC<TextProps> = ({
         </p>
       );
     case "body3":
+      return (
+        <p className={combinedClasses} style={fontStyles[variant]}>
+          {children}
+        </p>
+      );
+    case "body4":
       return (
         <p className={combinedClasses} style={fontStyles[variant]}>
           {children}

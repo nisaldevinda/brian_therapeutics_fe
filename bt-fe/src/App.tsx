@@ -17,7 +17,8 @@ import Team from "./sections/Team";
 import CTA from "./sections/CTA";
 import UseCases from "./sections/UseCases";
 import Pipeline from "./sections/Pipeline";
-import ResourcesExt from "./sections/ResourcesExt";
+// import ResourcesExt from "./sections/ResourcesExt";
+import ResourcesSec2 from "./sections/ResourcesSec2";
 
 // Example additional pages
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
       <HeroGradient />
       <Mission1 />
       <ScienceSec />
-      <ResourcesSec />
+      <ResourcesSec2 />
       <Investors />
       <ContactUs2 />
       <Footer logo={logo} />
@@ -68,7 +69,7 @@ const Resources = () => {
   return (
     <div>
       <ResourcesSec />
-      <ResourcesExt />
+      {/* <ResourcesExt /> */}
       <Footer logo={logo} />
     </div>
   );

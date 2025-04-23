@@ -11,7 +11,7 @@ const ContactUs: React.FC = () => {
         buttonText="Contact Us"
         onButtonClick={() => console.log("Button clicked")}
       />
-      <div className="h-auto w-screen bg-[#FFFFFF] flex flex-col justify-center">
+      <div className="h-auto md:h-[90vh] w-screen bg-[#FFFFFF] flex flex-col justify-center">
         <div className="container max-w-7xl mx-auto px-4 py-8 md:py-16 lg:py-20 flex flex-col gap-6 md:gap-12 lg:gap-16">
           <Text
             variant="h2"
@@ -72,17 +72,17 @@ const ContactUs: React.FC = () => {
             {/* Contact Information - Right Side */}
             <div className="w-full lg:w-2/5 mt-8 lg:mt-0">
               {/* <Text
-                variant="h4"
-                color="text-[#535353]"
-                className="mb-4 md:mb-6 text-xl sm:text-2xl"
-              >
-                Contact Information
-              </Text> */}
+                      variant="h4"
+                      color="text-[#535353]"
+                      className="mb-4 md:mb-6 text-xl sm:text-2xl"
+                    >
+                      Contact Information
+                    </Text> */}
 
               <div className="flex flex-col gap-5 md:gap-6 lg:gap-8">
                 {/* Phone */}
-                <div className="flex items-start sm:items-center gap-3 md:gap-4">
-                  <div className="bg-gray-100 p-2 md:p-3 rounded-full flex-shrink-0">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="p-2 rounded-full flex-shrink-0">
                     <img
                       src="/icons/phone-icon.svg"
                       alt="Phone"
@@ -96,14 +96,14 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <Text
-                      variant="body2"
-                      color="text-gray-700"
+                      variant="body3"
+                      color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Phone
                     </Text>
                     <Text
-                      variant="body1"
+                      variant="body3"
                       color="text-[#535353]"
                       className="text-base md:text-lg break-words"
                     >
@@ -113,8 +113,8 @@ const ContactUs: React.FC = () => {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start sm:items-center gap-3 md:gap-4">
-                  <div className="bg-gray-100 p-2 md:p-3 rounded-full flex-shrink-0">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="p-2  rounded-full flex-shrink-0">
                     <img
                       src="/icons/email-icon.svg"
                       alt="Email"
@@ -128,14 +128,14 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <Text
-                      variant="body2"
-                      color="text-gray-700"
+                      variant="body3"
+                      color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Email
                     </Text>
                     <Text
-                      variant="body1"
+                      variant="body3"
                       color="text-[#535353]"
                       className="text-base md:text-lg break-words"
                     >
@@ -146,7 +146,7 @@ const ContactUs: React.FC = () => {
 
                 {/* Address */}
                 <div className="flex items-start gap-3 md:gap-4">
-                  <div className="bg-gray-100 p-2 md:p-3 rounded-full flex-shrink-0 mt-1">
+                  <div className="p-2  rounded-full flex-shrink-0 mt-1">
                     <img
                       src="/icons/location-icon.svg"
                       alt="Address"
@@ -160,14 +160,14 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <Text
-                      variant="body2"
-                      color="text-gray-700"
+                      variant="body3"
+                      color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Address
                     </Text>
                     <Text
-                      variant="body1"
+                      variant="body3"
                       color="text-[#535353]"
                       className="text-base md:text-lg break-words"
                     >
@@ -180,14 +180,14 @@ const ContactUs: React.FC = () => {
 
               {/* Map or additional info could go here */}
               {/* <div className="mt-8 md:mt-10 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                <Text variant="body2" color="text-gray-700" className="text-sm">
-                  Our office hours:
-                  <br />
-                  Monday - Friday: 9:00 AM - 5:00 PM
-                  <br />
-                  Saturday - Sunday: Closed
-                </Text>
-              </div> */}
+                      <Text variant="body2" color="text-gray-700" className="text-sm">
+                        Our office hours:
+                        <br />
+                        Monday - Friday: 9:00 AM - 5:00 PM
+                        <br />
+                        Saturday - Sunday: Closed
+                      </Text>
+                    </div> */}
             </div>
           </div>
         </div>

@@ -1,8 +1,18 @@
 import Navbar from "../components/Navbar";
 import Text from "../components/text/TextComponent";
 import Button from "../components/text/Button";
+import { useEffect, useState } from "react";
 
 const HeroGradient = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation after component mounts
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
+  }, []);
+
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center"
@@ -34,12 +44,16 @@ const HeroGradient = () => {
             </Button>
           </div>
 
-          {/* Image positioned at bottom right */}
-          <div className="absolute bottom-28 right-0 z-10">
+          {/* Image positioned at bottom right with animation */}
+          <div className="absolute bottom-0 right-0 z-10">
             <img
               src="/bg/logo.webp"
               alt="Product showcase"
-              className="w-[80vw] md:w-[40vw] 2xl:w-[35vw]"
+              className={`w-[80vw] md:w-[40vw] 2xl:w-[35vw] transition-all duration-1000 ease-out ${
+                isLoaded
+                  ? "opacity-100 transform-none"
+                  : "opacity-0 rotate-30 translate-x-10"
+              }`}
             />
           </div>
         </div>

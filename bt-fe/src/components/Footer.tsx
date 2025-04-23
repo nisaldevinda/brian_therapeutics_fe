@@ -63,17 +63,23 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
 
         {/* Row 3: Copyright and Policies */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between text-xs pt-4">
-          <Text variant="body3" className="mb-2 md:mb-0 text-white">
-            Site by Magic Unbound
+          <Text variant="body4" className="mb-2 md:mb-0 text-white">
+            Site by{" "}
+            <a
+              href="https://www.magicunbound.co/"
+              className="hover:text-gray-300"
+            >
+              Magic Unbound
+            </a>
           </Text>
           <div className="flex space-x-6">
             <Link to="/privacy">
-              <Text variant="body3" className="text-white hover:text-gray-300">
+              <Text variant="body4" className="text-white hover:text-gray-300">
                 Privacy Policy
               </Text>
             </Link>
             <Link to="/terms">
-              <Text variant="body3" className="text-white hover:text-gray-300">
+              <Text variant="body4" className="text-white hover:text-gray-300">
                 Terms & Conditions
               </Text>
             </Link>

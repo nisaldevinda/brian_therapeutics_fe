@@ -1,6 +1,5 @@
 import Text from "../components/text/TextComponent";
 import Button from "../components/text/Button";
-import Navbar from "../components/Navbar";
 
 // Define interface for BlogCard props
 interface BlogCardProps {
@@ -49,7 +48,7 @@ interface BlogData {
   readMoreLink: string;
 }
 
-const ResourcesSec: React.FC = () => {
+const ResourcesSec2: React.FC = () => {
   // Sample blog data
   const blogs: BlogData[] = [
     {
@@ -71,11 +70,6 @@ const ResourcesSec: React.FC = () => {
 
   return (
     <>
-      <Navbar
-        logo="/logo.png"
-        buttonText="Contact Us"
-        onButtonClick={() => console.log("Button clicked")}
-      />
       <div className="container max-w-7xl mx-auto px-4 py-8 md:py-20 flex flex-col gap-6 md:gap-15 items-center">
         <Text variant="h2" color="text-[#2E4EA1]" align="center">
           Resources
@@ -101,4 +95,4 @@ const ResourcesSec: React.FC = () => {
   );
 };
 
-export default ResourcesSec;
+export default ResourcesSec2;

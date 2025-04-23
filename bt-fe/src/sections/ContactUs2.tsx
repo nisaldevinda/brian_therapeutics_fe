@@ -75,8 +75,8 @@ const ContactUs2: React.FC = () => {
 
               <div className="flex flex-col gap-5 md:gap-6 lg:gap-8">
                 {/* Phone */}
-                <div className="flex items-start sm:items-center gap-3 md:gap-4">
-                  <div className="bg-gray-100 p-2 md:p-3 rounded-full flex-shrink-0">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="p-2 rounded-full flex-shrink-0">
                     <img
                       src="/icons/phone-icon.svg"
                       alt="Phone"
@@ -90,14 +90,14 @@ const ContactUs2: React.FC = () => {
                   </div>
                   <div>
                     <Text
-                      variant="body2"
-                      color="text-gray-700"
+                      variant="body3"
+                      color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Phone
                     </Text>
                     <Text
-                      variant="body1"
+                      variant="body3"
                       color="text-[#535353]"
                       className="text-base md:text-lg break-words"
                     >
@@ -107,8 +107,8 @@ const ContactUs2: React.FC = () => {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start sm:items-center gap-3 md:gap-4">
-                  <div className="bg-gray-100 p-2 md:p-3 rounded-full flex-shrink-0">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="p-2  rounded-full flex-shrink-0">
                     <img
                       src="/icons/email-icon.svg"
                       alt="Email"
@@ -122,14 +122,14 @@ const ContactUs2: React.FC = () => {
                   </div>
                   <div>
                     <Text
-                      variant="body2"
-                      color="text-gray-700"
+                      variant="body3"
+                      color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Email
                     </Text>
                     <Text
-                      variant="body1"
+                      variant="body3"
                       color="text-[#535353]"
                       className="text-base md:text-lg break-words"
                     >
@@ -140,7 +140,7 @@ const ContactUs2: React.FC = () => {
 
                 {/* Address */}
                 <div className="flex items-start gap-3 md:gap-4">
-                  <div className="bg-gray-100 p-2 md:p-3 rounded-full flex-shrink-0 mt-1">
+                  <div className="p-2  rounded-full flex-shrink-0 mt-1">
                     <img
                       src="/icons/location-icon.svg"
                       alt="Address"
@@ -154,14 +154,14 @@ const ContactUs2: React.FC = () => {
                   </div>
                   <div>
                     <Text
-                      variant="body2"
-                      color="text-gray-700"
+                      variant="body3"
+                      color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Address
                     </Text>
                     <Text
-                      variant="body1"
+                      variant="body3"
                       color="text-[#535353]"
                       className="text-base md:text-lg break-words"
                     >
