@@ -4,7 +4,7 @@ import Button from "../components/text/Button";
 const Mission1 = () => {
   return (
     <>
-      <div className="h-auto md:h-screen w-screen bg-[#0E2154]">
+      <div className="h-auto w-screen bg-[#0E2154] z-10">
         <div className="container max-w-7xl mx-auto px-4 py-8 md:py-20 flex flex-col gap-6 md:gap-15">
           <Text variant="h2" color="text-[#FFFFFF]">
             Our Mission

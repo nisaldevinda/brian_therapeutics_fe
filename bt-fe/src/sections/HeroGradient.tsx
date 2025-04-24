@@ -45,7 +45,7 @@ const HeroGradient = () => {
           </div>
 
           {/* Image positioned at bottom right with animation */}
-          <div className="absolute bottom-0 right-0 z-10">
+          <div className="absolute bottom-0 right-0 z-1">
             <img
               src="/bg/logo.webp"
               alt="Product showcase"
