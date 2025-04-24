@@ -31,7 +31,7 @@ const Button: React.FC<ButtonProps> = ({
     button1: "py-2 gap-2 hover:gap-3",
 
     // Boxless button with text and paper airplane
-    button2: "py-2 gap-2",
+    button2: "py-2 px-4 gap-2 font-normal",
 
     // Boxed button with text and paper airplane
     button3: "py-3 px-6 rounded-lg border gap-2 hover:shadow-md",

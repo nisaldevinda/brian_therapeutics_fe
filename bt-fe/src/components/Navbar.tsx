@@ -87,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <Link
                 key={index}
                 to={item.path}
-                className="py-2 border-b border-gray-100"
+                className="py-2 border-b border-white/20"
               >
                 <Text
                   variant="body1"
@@ -120,17 +120,18 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="hidden md:flex md:items-center md:space-x-8">
           <div className="flex space-x-8">
             {menuItems.map((item, index) => (
-              <Link key={index} to={item.path}>
+              <Link key={index} to={item.path} className="relative group">
                 <Text
                   variant="body2"
                   className={`transition-colors duration-300 ${
                     location.pathname === item.path
                       ? "text-[#1A1A1A]"
-                      : "hover:text-[#1D1D1F]"
+                      : "text-[#1A1A1A] opacity-70 hover:opacity-100"
                   }`}
                 >
                   {item.name}
                 </Text>
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-[#1A1A1A] rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></div>
               </Link>
             ))}
           </div>
@@ -138,7 +139,7 @@ const Navbar: React.FC<NavbarProps> = ({
             <Button
               variant="button2"
               bgColor=""
-              color="text-[#E00047]"
+              color="text-[#E00047] hover:border-1 hover:border-[#E00047] rounded-lg"
               onClick={onButtonClick}
               className="md:text-xl"
             >

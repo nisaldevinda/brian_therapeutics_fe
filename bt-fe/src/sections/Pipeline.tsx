@@ -19,17 +19,17 @@ const ClinicalTrialRow: React.FC<ClinicalTrialProps> = ({
 }) => {
   return (
     <tr className="border-b-1 border-[#0E215480]">
-      <td className="py-4 px-4 md:px-8 md:py-4">
+      <td className="py-4 px-4 md:px-8 md:py-4 align-top">
         <Text variant="body2" color="text-gray-800">
           {treatment}
         </Text>
       </td>
-      <td className="py-4 px-4 md:px-8 md:py-4">
+      <td className="py-4 px-4 md:px-8 md:py-4 align-top">
         <Text variant="body2" color="text-gray-800">
           {trial}
         </Text>
       </td>
-      <td className="py-4 px-4 md:px-8 md:py-4">
+      <td className="py-4 px-4 md:px-8 md:py-4 align-top">
         <div className="flex flex-col gap-2">
           <Text variant="h4" color="text-gray-800">
             {histology}
@@ -39,12 +39,12 @@ const ClinicalTrialRow: React.FC<ClinicalTrialProps> = ({
           </Text>
         </div>
       </td>
-      <td className="py-4 px-4 md:px-8 md:py-4">
+      <td className="py-4 px-4 md:px-8 md:py-4 align-top">
         <Text variant="body2" color="text-gray-800">
           {region}
         </Text>
       </td>
-      <td className="py-4 px-4 md:px-8 md:py-4">
+      <td className="py-4 px-4 md:px-8 md:py-4 align-top">
         <Text variant="body2" color="text-gray-800">
           {status}
         </Text>

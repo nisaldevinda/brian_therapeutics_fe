@@ -72,12 +72,12 @@ const ContactUs: React.FC = () => {
             {/* Contact Information - Right Side */}
             <div className="w-full lg:w-2/5 mt-8 lg:mt-0">
               {/* <Text
-                      variant="h4"
-                      color="text-[#535353]"
-                      className="mb-4 md:mb-6 text-xl sm:text-2xl"
-                    >
-                      Contact Information
-                    </Text> */}
+                variant="h4"
+                color="text-[#535353]"
+                className="mb-4 md:mb-6 text-xl sm:text-2xl"
+              >
+                Contact Information
+              </Text> */}
 
               <div className="flex flex-col gap-5 md:gap-6 lg:gap-8">
                 {/* Phone */}
@@ -95,13 +95,13 @@ const ContactUs: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <Text
+                    {/* <Text
                       variant="body3"
                       color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Phone
-                    </Text>
+                    </Text> */}
                     <Text
                       variant="body3"
                       color="text-[#535353]"
@@ -127,13 +127,13 @@ const ContactUs: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <Text
+                    {/* <Text
                       variant="body3"
                       color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Email
-                    </Text>
+                    </Text> */}
                     <Text
                       variant="body3"
                       color="text-[#535353]"
@@ -159,13 +159,13 @@ const ContactUs: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <Text
+                    {/* <Text
                       variant="body3"
                       color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Address
-                    </Text>
+                    </Text> */}
                     <Text
                       variant="body3"
                       color="text-[#535353]"
@@ -180,14 +180,14 @@ const ContactUs: React.FC = () => {
 
               {/* Map or additional info could go here */}
               {/* <div className="mt-8 md:mt-10 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                      <Text variant="body2" color="text-gray-700" className="text-sm">
-                        Our office hours:
-                        <br />
-                        Monday - Friday: 9:00 AM - 5:00 PM
-                        <br />
-                        Saturday - Sunday: Closed
-                      </Text>
-                    </div> */}
+                <Text variant="body2" color="text-gray-700" className="text-sm">
+                  Our office hours:
+                  <br />
+                  Monday - Friday: 9:00 AM - 5:00 PM
+                  <br />
+                  Saturday - Sunday: Closed
+                </Text>
+              </div> */}
             </div>
           </div>
         </div>

@@ -89,13 +89,13 @@ const ContactUs2: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <Text
+                    {/* <Text
                       variant="body3"
                       color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Phone
-                    </Text>
+                    </Text> */}
                     <Text
                       variant="body3"
                       color="text-[#535353]"
@@ -121,13 +121,13 @@ const ContactUs2: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <Text
+                    {/* <Text
                       variant="body3"
                       color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Email
-                    </Text>
+                    </Text> */}
                     <Text
                       variant="body3"
                       color="text-[#535353]"
@@ -153,13 +153,13 @@ const ContactUs2: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <Text
+                    {/* <Text
                       variant="body3"
                       color="text-[#535353]"
                       className="font-medium text-sm md:text-base"
                     >
                       Address
-                    </Text>
+                    </Text> */}
                     <Text
                       variant="body3"
                       color="text-[#535353]"
