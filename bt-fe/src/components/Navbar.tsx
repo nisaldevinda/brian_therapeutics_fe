@@ -101,17 +101,18 @@ const Navbar: React.FC<NavbarProps> = ({
                 </Text>
               </Link>
             ))}
-          </div>
-          <div className="mt-4">
-            <Link to="/contact">
-              <Button
-                variant="button2"
-                bgColor=""
-                color="text-[#E00047]"
-                onClick={onButtonClick}
+            {/* Contact link for mobile - styled like other links */}
+            <Link
+              to="/contact"
+              className="py-2 border-b border-white/20"
+              onClick={onButtonClick}
+            >
+              <Text
+                variant="body1"
+                className="transition-colors duration-300 text-[#E00047] hover:text-[#E00047]/80"
               >
                 {buttonText}
-              </Button>
+              </Text>
             </Link>
           </div>
         </div>

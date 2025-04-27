@@ -14,7 +14,11 @@ const CTA = () => {
             Get in touch with us using the form on our Contact Us page. <br />{" "}
             Our business development team will reach out to you with a reply.
           </Text>
-          <Button variant="button3" bgColor="bg-[#2E4EA1] text-white">
+          <Button
+            variant="button3"
+            bgColor="bg-[#2E4EA1] text-white"
+            className="hover:bg-[#224EC4]"
+          >
             Contact Us
           </Button>
         </div>

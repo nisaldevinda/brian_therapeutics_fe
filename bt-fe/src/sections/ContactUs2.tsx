@@ -54,7 +54,7 @@ const ContactUs2: React.FC = () => {
 
                 <Button
                   variant="button3"
-                  bgColor="bg-[#E00047]"
+                  bgColor="bg-[#E00047] hover:bg-[#FF3D7A]"
                   color="text-white"
                   className="w-fit"
                 >
