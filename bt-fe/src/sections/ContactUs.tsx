@@ -82,7 +82,7 @@ const ContactUs: React.FC = () => {
               <div className="flex flex-col gap-5 md:gap-6 lg:gap-8">
                 {/* Phone */}
                 <div className="flex items-start gap-3 md:gap-4">
-                  <div className="p-2 rounded-full flex-shrink-0">
+                  <div className="px-2 py-1 rounded-full flex-shrink-0">
                     <img
                       src="/icons/phone-icon.svg"
                       alt="Phone"
@@ -114,7 +114,7 @@ const ContactUs: React.FC = () => {
 
                 {/* Email */}
                 <div className="flex items-start gap-3 md:gap-4">
-                  <div className="p-2  rounded-full flex-shrink-0">
+                  <div className="px-2 py-1 rounded-full flex-shrink-0">
                     <img
                       src="/icons/email-icon.svg"
                       alt="Email"
@@ -146,7 +146,7 @@ const ContactUs: React.FC = () => {
 
                 {/* Address */}
                 <div className="flex items-start gap-3 md:gap-4">
-                  <div className="p-2  rounded-full flex-shrink-0 mt-1">
+                  <div className="px-2   rounded-full flex-shrink-0 mt-1">
                     <img
                       src="/icons/location-icon.svg"
                       alt="Address"

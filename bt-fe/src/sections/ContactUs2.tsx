@@ -76,7 +76,7 @@ const ContactUs2: React.FC = () => {
               <div className="flex flex-col gap-5 md:gap-6 lg:gap-8">
                 {/* Phone */}
                 <div className="flex items-start gap-3 md:gap-4">
-                  <div className="p-2 rounded-full flex-shrink-0">
+                  <div className="px-2 rounded-full flex-shrink-0">
                     <img
                       src="/icons/phone-icon.svg"
                       alt="Phone"

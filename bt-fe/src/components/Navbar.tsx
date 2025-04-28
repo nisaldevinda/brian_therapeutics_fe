@@ -87,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <Link
                 key={index}
                 to={item.path}
-                className="py-2 border-b border-white/20"
+                className="py-2 border-b border-white/12"
               >
                 <Text
                   variant="body1"
@@ -104,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = ({
             {/* Contact link for mobile - styled like other links */}
             <Link
               to="/contact"
-              className="py-2 border-b border-white/20"
+              className="py-2 border-b border-white/12"
               onClick={onButtonClick}
             >
               <Text

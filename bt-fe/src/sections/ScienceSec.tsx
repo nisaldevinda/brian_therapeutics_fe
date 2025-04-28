@@ -4,7 +4,7 @@ import Button from "../components/text/Button";
 const ScienceSec = () => {
   return (
     <>
-      <div className="h-auto  w-screen bg-[#AE0339] -z-10">
+      <div className="h-auto md:h-screen w-screen bg-[#AE0339] -z-10">
         <div className="container max-w-7xl mx-auto px-4 py-8 md:py-20 flex flex-col gap-6 md:gap-15 items-start">
           <div className="w-full md:w-[40%] flex flex-col items-start gap-4 md:gap-6">
             <Text variant="h2" color="text-[#FFFFFF]" className="mb-6 md:mb-14">
@@ -24,11 +24,11 @@ const ScienceSec = () => {
             </Button>
           </div>
         </div>
-        <div className="flex justify-end mt-0 md:mt-[-20%]">
+        <div className="flex justify-end mr-8 md:mr-20 mt-0 md:mt-[-8%] ">
           <img
             src="/images/science.webp"
             alt="Product showcase"
-            className="w-[80vw] md:w-[40vw] 2xl:w-[35vw]"
+            className="w-[80vw] md:w-[50vw] 2xl:w-[45vw] hidden md:block"
           />
         </div>
       </div>

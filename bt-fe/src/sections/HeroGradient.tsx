@@ -15,11 +15,11 @@ const HeroGradient = () => {
 
   return (
     <div
-      className="relative h-screen w-full bg-cover bg-center overflow-hidden"
+      className="relative h-screen w-full bg-auto md:bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: 'url("/bg/home-hero.webp")' }}
     >
       {/* Overlay to improve text readability */}
-      <div className="absolute inset-0 bg-black opacity-0"></div>
+      {/* <div className="absolute inset-0 bg-black opacity-0"></div> */}
 
       <Navbar
         logo="/logo.png"

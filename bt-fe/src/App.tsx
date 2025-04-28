@@ -19,6 +19,7 @@ import UseCases from "./sections/UseCases";
 import Pipeline from "./sections/Pipeline";
 // import ResourcesExt from "./sections/ResourcesExt";
 import ResourcesSec2 from "./sections/ResourcesSec2";
+import ResourcesInnerPage from "./sections/ResourcesInner";
 
 // Example additional pages
 const Home = () => {
@@ -75,6 +76,16 @@ const Resources = () => {
   );
 };
 
+const ResourcesInner = () => {
+  return (
+    <div>
+      <ResourcesInnerPage />
+      {/* <ResourcesExt /> */}
+      <Footer logo={logo} />
+    </div>
+  );
+};
+
 // Navigation component
 // const Navigation = () => {
 //   return (
@@ -119,6 +130,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/science" element={<Science />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/blog/1" element={<ResourcesInner />} />
+        <Route path="/blog/2" element={<ResourcesInner />} />
+        <Route path="/blog/3" element={<ResourcesInner />} />
       </Routes>
     </BrowserRouter>
   );
